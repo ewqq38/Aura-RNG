@@ -1,15 +1,92 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background: #0a0e27;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0a0e27, #1a1f3a);
+  z-index: -2;
+}
+
+.particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 30px;
+}
+
+h1 {
+  font-size: 4rem;
+  text-shadow:
+    0 0 20px cyan,
+    0 0 40px magenta;
+  letter-spacing: 3px;
+}
+
+.roll-box {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid cyan;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.center-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: white;
+  z-index: 10;
+  transform: translateX(-50%);
+}
+
+#auraBar {
+  display: flex;
+  width: auto;
+}
+
+.aura-card {
+  min-width: 160px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
-
-  border-right: 2px solid rgba(255,255,255,0.08);
-
-  text-shadow: 0 0 15px white;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-right: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 button {
