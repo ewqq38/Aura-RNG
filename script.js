@@ -10,42 +10,8 @@ let totalRolls = 0;
 
 const auras = [
 
-  {
-    name: "Quicksand",
-    rarity: "RARE",
-    color: "#ccaa55",
-    description: "The shifting desert consumes all."
-  },
-
-  {
-    name: "The Rift",
-    rarity: "RARE",
-    color: "#3388ff",
-    description: "Reality tears apart."
-  },
-
-  {
-    name: "Cursed Flame",
-    rarity: "EPIC",
-    color: "#bb44ff",
-    description: "Purple fire from another world."
-  },
-
-  {
-    name: "Divine Light",
-    rarity: "LEGENDARY",
-    color: "gold",
-    description: "Pure celestial energy."
-  },
-
-  {
-    name: "Galaxy",
-    rarity: "EPIC",
-    color: "#9944ff",
-    description: "A spiral of stars."
-  },
-
-  {
-    name: "Primordial Chaos",
-    rarity: "PRIMAL",
-    color: "#
+  { name: "Quicksand", rarity: "COMMON", color: "#b89b5e", description: "The desert slowly swallows reality." },
+  { name: "Stone", rarity: "COMMON", color: "#888888", description: "Cold and unbreakable." },
+  { name: "Mist", rarity: "COMMON", color: "#bbbbbb", description: "A drifting cloud of silence." },
+  { name: "Forest", rarity: "COMMON", color: "#55aa55", description: "Nature watches quietly." },
+  { name: "Ocean", rarity: "COMMON", color: "#3388ff", description: "The tides never rest." },
