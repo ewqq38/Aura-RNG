@@ -1,4 +1,26 @@
 const auraBar = document.getElementById("auraBar");
+const rollBtn = document.getElementById("rollBtn");
+const result = document.getElementById("result");
+
+const auras = [
+  {
+    name: "COMMON",
+    color: "gray",
+    chance: 50
+  },
+  {
+    name: "RARE",
+    color: "blue",
+    chance: 30
+  },
+  {
+    name: "EPIC",
+    color: "purple",
+    chance: 12
+  },
+  {
+    name: "LEGENDARY",
+    color: "gold",
     chance: 5
   },
   {
