@@ -1,31 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aura RNG</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-<div class="background"></div>
-<div class="particles"></div>
+    </div>
 
-<div class="container">
-  <h1>AURA RNG</h1>
+    <div id="auraName" class="aura-name">
+      ???
+    </div>
 
-  <div class="roll-box">
-    <div id="auraBar" class="aura-bar"></div>
+    <div id="auraDescription" class="aura-description">
+      Roll to discover cosmic power.
+    </div>
 
-    <div class="center-line"></div>
+    <button id="rollBtn" class="roll-btn">
+      ⚡ ROLL
+    </button>
+
+    <div class="auto-roll-text">
+      AUTO ROLL: OFF
+    </div>
+
+    <div class="pity-box">
+
+      <div class="pity-header">
+        PITY SYSTEM
+      </div>
+
+      <div class="pity-row">
+        <span>Legendary Pity</span>
+        <span>14 / 100</span>
+      </div>
+
+      <div class="pity-bar">
+        <div class="pity-fill legendary"></div>
+      </div>
+
+      <div class="pity-row">
+        <span>Mythic Pity</span>
+        <span>2 / 150</span>
+      </div>
+
+      <div class="pity-bar">
+        <div class="pity-fill mythic"></div>
+      </div>
+
+    </div>
+
   </div>
 
-  <button id="rollBtn">ROLL</button>
+  <div class="sidebar right">
 
-  <div id="result" class="result">Press Roll</div>
+    <div class="rarity-panel">
+
+      <div class="panel-title">✦ Rarities</div>
+
+      <div class="rarity common">Common <span>70%</span></div>
+      <div class="rarity uncommon">Uncommon <span>15%</span></div>
+      <div class="rarity rare">Rare <span>8%</span></div>
+      <div class="rarity epic">Epic <span>5%</span></div>
+      <div class="rarity legendary">Legendary <span>1.7%</span></div>
+      <div class="rarity mythic">Mythic <span>0.25%</span></div>
+      <div class="rarity divine">Divine <span>0.04%</span></div>
+      <div class="rarity primal">Primal <span>0.009%</span></div>
+
+    </div>
+
+    <div class="recent-panel">
+
+      <div class="panel-title">🕓 Recent Rolls</div>
+
+      <div id="recentRolls"></div>
+
+    </div>
+
+  </div>
+
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
-
