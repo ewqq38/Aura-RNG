@@ -3,28 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aura RNG</title>
+  <title>Aura RNG - Cosmic Fate Roller</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="background"></div>
-<div class="particles"></div>
-
-<div class="container">
-  <h1>AURA RNG</h1>
-
-  <div class="roll-box">
-    <div id="auraBar" class="aura-bar"></div>
-
-    <div class="center-line"></div>
+  <!-- Cosmic Background -->
+  <div class="cosmic-bg">
+    <canvas id="starsCanvas"></canvas>
+    <div class="nebula nebula-1"></div>
+    <div class="nebula nebula-2"></div>
+    <div class="nebula nebula-3"></div>
   </div>
 
-  <button id="rollBtn">ROLL</button>
+  <!-- Particles Container -->
+  <div class="particles-container" id="particlesContainer"></div>
 
-  <div id="result" class="result">Press Roll</div>
-</div>
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      <h1 class="title">
+        <span class="glow-text">✦ AURA RNG ✦</span>
+      </h1>
+      <p class="subtitle">Roll to discover your cosmic fate</p>
+    </div>
 
-<script src="script.js"></script>
+    <!-- Main Content -->
+    <div class="content">
+      <!-- Roll Box -->
+      <div class="roll-container">
+        <div class="roll-box">
+          <div class="roll-box-glow"></div>
+          <div class="aura-bar" id="auraBar"></div>
+          <div class="center-indicator">
+            <div class="indicator-line"></div>
+            <div class="indicator-glow"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Result Display -->
+      <div class="result-section">
+        <div id="result" class="result">Press ROLL to begin</div>
+        <div id="resultRarity" class="result-rarity"></div>
+      </div>
+
+      <!-- Roll Button -->
+      <button id="rollBtn" class="roll-btn">
+        <span class="btn-text">ROLL FATE</span>
+        <span class="btn-glow"></span>
+      </button>
+
+      <!-- Stats Section -->
+      <div class="stats-section">
+        <div class="stat-item">
+          <span class="stat-label">Total Rolls:</span>
+          <span id="totalRolls" class="stat-value">0</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-label">Legendary Count:</span>
+          <span id="legendaryCount" class="stat-value">0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>✧ Powered by Cosmic Forces ✧</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
